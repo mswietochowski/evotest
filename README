@@ -1,0 +1,16 @@
+Proof of Concept evolutionary algorithm for 3D graph visualisation.
+
+Hardocded graph with 4 vertices and 3 edges, all in 0,0,0 at the
+beginning. Quality of code is below poor, but it works, and that's
+what matters at the moment.
+
+If you don't have imagination powerful enough to see that the
+resulting vertices' coordinates are quite OK, the last 4 lines of
+output serves as an input to physics-opengl by Michał Nazarewicz
+(http://github.com/mina86/physics-opengl).
+
+Running scenario:
+../../evotest/dist/evotest | tail -n 4 | ./physics
+
+Have fun.
+
