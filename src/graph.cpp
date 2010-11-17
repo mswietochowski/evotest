@@ -1,7 +1,7 @@
 #include "graph.hpp"
 
-Vertex::Vertex(Vertex::key k, std::string _name, double _x, double _y, double _z)
-	: number(k), name(_name), x(_x), y(_y), z(_z)
+Vertex::Vertex(Vertex::key k, std::string _name, double _x, double _y, double _z, double _r, double _g, double _b)
+	: number(k), name(_name), x(_x), y(_y), z(_z), r(_r), g(_g), b(_b)
 {
 }
 

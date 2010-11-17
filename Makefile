@@ -1,9 +1,10 @@
 CXX		?= g++
+LDFLAGS += -lgsl -lgslcblas
 
-all: program
+all: dist/evotest
 
-program: objs/graph.o objs/main.o
-#	@exec mkdir -p -- dist
+dist/evotest: objs/graph.o objs/main.o
+	@exec mkdir -p -- dist
 	exec $(CXX) $(LDFLAGS) -o $@ $^ $(LIBS)
 
 objs/%.o: src/%.cpp
